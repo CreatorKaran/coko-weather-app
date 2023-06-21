@@ -23,7 +23,6 @@ const Search: React.FC = () => {
 
     setShowSuggestions(true);
     fetchCities(searchTerm).then((res) => {
-      console.log('res', res);
       if (res.status && res.status === 429) {
         setSearchTerm('');
         setShowSuggestions(false);

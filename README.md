@@ -20,4 +20,7 @@ Weather App built with React.
 - if anything goes wrong while installing libraries then do this command: `npm install --legacy-peer-deps`
 - After successfull installation of libraries, you can start project by Command: `npm start`
 
-NOTE: Make sure you have added env variables in root directory of current project in file with filename: .env
+
+###### NOTE: 
+- Make sure you have added env variables in root directory of current project in file with filename: .env
+- Sometimes if too many API calls were given to third party city search API then it's giving error, so to handle that error I've added a pop-up so App will get time to cooldown.

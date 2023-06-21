@@ -12,7 +12,6 @@ export const fetchCities = async (search: string) => {
 
     if (response.ok) {
       const data = await response.json();
-      console.log(data);
       return data.map((i: any) => {
         return i.fullName = `${i.value}, ${i.iso_a2}`;
       });
