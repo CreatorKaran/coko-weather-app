@@ -10,7 +10,6 @@ interface ISuggestionProps {
 }
 
 const Suggestion: React.FC<ISuggestionProps> = (props) => {
-  console.log('Suggest..', props.suggest)
   const dispatch = useDispatch();
   const onClick = () => {
     // dispatch(fetchWeather(props.label.split(',')[0]));
